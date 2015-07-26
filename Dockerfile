@@ -5,5 +5,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+
 RUN gem install jekyll && \
     npm install gulp gulpfile-install
