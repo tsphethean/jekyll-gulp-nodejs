@@ -8,4 +8,5 @@ RUN apt-get update && \
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN gem install jekyll && \
-    npm install gulp gulpfile-install -g
+    npm update -g npm && \
+    npm install gulp gulpfile-install imagemin -g
